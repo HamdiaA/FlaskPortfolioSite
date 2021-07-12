@@ -5,7 +5,7 @@ COPY requirements.txt /myportfolio
 WORKDIR /myportfolio
 RUN pip3 install -r requirements.txt
 
-
 COPY . /myportfolio
+
 RUN chmod u+x ./entrypoint.sh
-CMD ["./entrypoint.sh"]
+ENTRYPOINT ["sh", "./entrypoint.sh"]
