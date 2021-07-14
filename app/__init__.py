@@ -9,7 +9,6 @@ from flask_migrate import Migrate
 import subprocess
 
 #load_dotenv()
-#app.config['DATABASE'] = os.path.join(os.getcwd(), 'flask.sqlite')
 #db.init_app(app)
 
 app = Flask(__name__)
